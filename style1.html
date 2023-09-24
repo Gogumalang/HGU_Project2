@@ -6,32 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body{
+            font : 100% Lucida Sans, Verdana;
+            margin : 20px;
+            line-height: 26px;
+        }
         #top{
             background-color: seagreen;
             color: white;
+            padding:15px;
+            margin : 4px;
+        }
+        #top h1,#top p {
+            margin: 0px;
+        }
+        #top, .menuitem , #bottom, #sidebar{
+            border-radius: 4px;
         }
         .center{
-
+			position: relative;
         }
         #menubar{
+        	width: 200px;
+            float:left;
 
         }
-        #menu{
-
+        #menulist{
+            padding : 0px;
+            margin : 0px;
         }
         #main{
-
+        	margin:auto;
+            width:60%;
+            padding : 10px;
         }
         #sidebar{
+            width: 200px;
+            float:right;
             background-color: deepskyblue;
             color: white;
+            position:absolute;
+            right: 0;
+            top : 0;
+            bottom: 0;
+            padding : 10px;
 
         }
         #bottom{
             background-color: lightgray;
+            border: 1px solid gray;
+            text-align: center;
+            font-size: small;
         }
         .menuitem{
             background-color: lightgray;
+            border: 1px solid gray;
+            list-style-type: none;
+            padding:2px;
+            margin: 4px; 
         }
 
 
@@ -45,12 +77,12 @@
         </div>
         <div class="center">
             <div id ="menubar"> 
-                <ul>
-                    <li class=".menuitem">Stylesheet 1</li>
-                    <li class=".menuitem">Stylesheet 2</li>
-                    <li class=".menuitem">Stylesheet 3</li>
-                    <li class=".menuitem">Stylesheet 4</li>
-                    <li class=".menuitem">No Stylesheet</li>
+                <ul id="menulist">
+                    <li class="menuitem">Stylesheet 1</li>
+                    <li class="menuitem">Stylesheet 2</li>
+                    <li class="menuitem">Stylesheet 3</li>
+                    <li class="menuitem">Stylesheet 4</li>
+                    <li class="menuitem">No Stylesheet</li>
                 </ul>
             </div>
             <div id="main"> 
