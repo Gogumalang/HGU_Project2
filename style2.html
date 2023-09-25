@@ -6,77 +6,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
-            font : 100% Lucida Sans, Verdana;
+        body{ 
+            font : Arial;
             margin : 20px;
-            line-height: 26px;
+            line-height: 20px;
+            background-color: #D14836;
+        }
+        #contanier{
+          
         }
         #top{
-            background-color: #04AA6D;
             color: white;
-            padding:15px;
-            margin : 4px;
+            
+            padding: 15px;
         }
-        #top h1,#top p {
+        #top h1{
             margin: 0px;
+            font-size: 50px;
+            font-weight: bold;
         }
-        #top, .menuitem , #bottom, #sidebar{
-            border-radius: 4px;
+        #top p{
+            font-size: 30px;
+            font-weight: bold;
         }
+        
         .center{
 			position: relative;
+            background-color: white;
         }
         #menubar{
-        	width: 200px;
-            float:left;
+        	width: 190px;
+            float:right;
 
         }
         #menulist{
             padding : 0px;
-            margin : 0px;
+            
+            font : 16px verdana;
         }
         #main{
-        	margin:auto;
-            width:60%;
             padding : 10px;
+            font : 80% verdana;
         }
-        #sidebar{
-            width: 200px;
-            float:right;
-            background-color: #32A4E7;
-            color: white;
-            position:absolute;
-            right: 0;
-            top : 0;
-            bottom: 0;
-            padding : 10px;
+        #main h1,#main h2 {
+            color : #d14836;
 
         }
-        #bottom{
-            background-color: lightgray;
-            border: 1px solid gray;
-            text-align: center;
-            font-size: small;
+        #sidebar{
+            background-color: #F6DAD7;
+            color: #d14836;
             padding : 10px;
+        }
+        #sidebar h3{
+            font-weight: bold;
+            font-size: 23px;
+        }
+        #bottom{
+            text-align: center;
+            font-size: 70%;
+            padding : 10px;
+            color: #ffffff;
             margin : 4px;
         }
         .menuitem{
-            background-color: #f1f1f1;
-            border: 1px solid #d4d4d4;
+            background-color: #D14836;
+            border: 1px solid #D14836;
+            color: #ffffff;
             list-style-type: none;
-            padding:2px;
-            margin: 4px; 
+            padding:5px;
+            margin: 10px; 
+            text-align: center;
+            border-radius: 40px;
+
+
         }
         .menuitem:hover{
             background-color : #ffffff;
+            color: #D14836;
 
         }
 
-        .menuitem:first-child{
-            color : white;
+        .menuitem:nth-child(2){
+            background-color : #ffffff;
+            color: #D14836;
             font-weight : bolder;
-            background-color: #04AA6D;
-
+        }
+        a {
+            color :#D14836;
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
         }
         
 
@@ -84,7 +104,7 @@
     </style>
 </head>
 <body>
-    <div>
+    <div id = "container">
         <div id="top"> 
             <h1>Welcome to 박세영's Homepage (22000269)</h1>
             <p>Use the menu to select different Stylesheets</p>
@@ -103,12 +123,12 @@
                 <h1>Same Page Different Stylesheets</h1>
                 <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links: 
                     <br>
-                    Stylesheet1, Stylesheet2, Stylesheet3, Stylesheet4.
+                    <a href="">Stylesheet1</a>, <a href="">Stylesheet2</a>, <a href="">Stylesheet3</a>, <a href="">Stylesheet4</a>.
                 </p>
                 <h2>No Styles</h2>
                 <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:
                     <br>
-                    No Stylesheet.
+                   <a href="">No Stylesheet</a>.
                 </p> 
             </div>
             <div id="sidebar">
