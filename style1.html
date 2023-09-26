@@ -78,6 +78,13 @@
             background-color: #04AA6D;
 
         }
+        a{
+            color: #000000;
+            text-decoration: underline;
+        }
+        a:hover{
+            text-decoration: none;
+        }
         
 
 
@@ -92,8 +99,12 @@
         <div class="center">
             <div id ="menubar"> 
                 <ul id="menulist">
-                    <li class="menuitem">Stylesheet 1</li>
-                    <li class="menuitem">Stylesheet 2</li>
+                    <li class="menuitem">
+                        <a style="text-decoration: none ;color: #f1f1f1" href="https://dulcet-cat-0d9ea6.netlify.app/style1.html">Stylesheet1</a>
+                    </li>
+                    <li class="menuitem">
+                        <a style="text-decoration: none" href="https://dulcet-cat-0d9ea6.netlify.app/style2.html">Stylesheet2</a>
+                    </li>
                     <li class="menuitem">Stylesheet 3</li>
                     <li class="menuitem">Stylesheet 4</li>
                     <li class="menuitem">No Stylesheet</li>
@@ -103,7 +114,9 @@
                 <h1>Same Page Different Stylesheets</h1>
                 <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links: 
                     <br>
-                    Stylesheet1, Stylesheet2, Stylesheet3, Stylesheet4.
+                    <a href="https://dulcet-cat-0d9ea6.netlify.app/style1.html">Stylesheet1</a>,
+                    <a href="https://dulcet-cat-0d9ea6.netlify.app/style2.html">Stylesheet2</a>,
+                    Stylesheet3, Stylesheet4.
                 </p>
                 <h2>No Styles</h2>
                 <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:
